@@ -118,12 +118,10 @@ Password', 'required|trim|matches[password1]');
  } else {
     $email = $this->input->post('email', true);
     $data = [
-    'nama' => htmlspecialchars($this->input-
-   post('nama', true)),
+    'nama' => htmlspecialchars($this->input->post('nama', true)),
     'email' => htmlspecialchars($email),
     'image' => 'default.jpg',
-    'password' => password_hash($this->input-
-   post('password1'), PASSWORD_DEFAULT),
+    'password' => password_hash($this->input->post('password1'), PASSWORD_DEFAULT),
     'role_id' => 2,
     'is_active' => 0,
     'tanggal_input' => time()
