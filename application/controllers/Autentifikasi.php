@@ -30,8 +30,7 @@ $this->form_validation->set_rules('email', 'Alamat Email',
  }
 private function _login()
  {
- $email = htmlspecialchars($this->input->post('email', 
-true));
+ $email = htmlspecialchars($this->input->post('email', true));
  $password = $this->input->post('password', true);
  $user = $this->ModelUser->cekData(['email' => $email])->row_array();
  //jika usernya ada
