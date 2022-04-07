@@ -14,7 +14,7 @@ style="max-width:100%; max-height: 100%; height: 150px; width: 120px">
  <td nowrap><?= $judul; ?></td>
  <td>&nbsp;</td>
  <th>Kategori: </th>
- <td><?= $kategori ?></td>
+ 
  </tr>
  <tr>
  <th nowrap>Penerbit: </th>
